@@ -1,7 +1,7 @@
 Doodle SDK + demo app
 =====================
 
-An application I developed at the [MTG @ UPF][http://www.mtg.upf.edu] for my
+An application I developed at the [MTG @ UPF](http://www.mtg.upf.edu) for my
 Master's degree.
 
 This code is obsolete and unlikely to work. Quite frankly, I don't think it even
