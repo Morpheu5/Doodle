@@ -1,0 +1,80 @@
+/* (C) 2009 by Andrea Franceschini <andrea.franceschini@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef IAPPLICATION_H_
+#define IAPPLICATION_H_
+#include <QStringList>
+#include <QSet>
+#include <QDebug>
+
+#include "Tangible.h"
+
+#define DOODLE_APPLICATION \
+public: \
+	virtual void setObjects(QHash<long, QString> objects) { _objects = objects; } \
+protected: \
+	virtual bool acceptable(QList<long> objects, QList<unsigned long> widgets) { \
+		QSet<unsigned long> r = widgets.toSet(); \
+		int i; \
+		for(i = 0; i < _widgets.size(); i++) { \
+			if(r.contains(_widgets.at(i)->id())) { \
+				return true; \
+			} \
+		} \
+		QSet<long> s = objects.toSet(); \
+		s.intersect(_objects.keys().toSet()); \
+		return !s.isEmpty(); \
+	} \
+private:
+
+namespace Doodle {
+class Widget;
+class Tangible;
+
+class IApplication {
+public:
+	virtual QString name() const = 0;
+	virtual void init(QString, QHash<QString, QString>) = 0;
+	virtual QStringList declareObjects() const = 0;
+	virtual QStringList declareGestureRecognizers() const = 0;
+	virtual QStringList declareWidgets() const = 0;
+	virtual void setObjects(QHash<long, QString> objects) = 0;
+
+public slots:
+	virtual void processResults(QStringList) = 0;
+	virtual void processMessages(QStringList) = 0;
+	virtual void addTangible(Tangible*) = 0;
+	virtual void updateTangible(Tangible*) = 0;
+	virtual void removeTangible(Tangible*) = 0;
+
+signals:
+	void makeWidget(Widget*);
+	void destroyWidget(Widget*);
+	void deliverMessages(QStringList);
+
+protected:
+	virtual bool acceptable(QList<long> objects, QList<unsigned long>) = 0;
+
+	QHash<long, QString> _objects;
+	QHash<long, Tangible*> _tangibles;
+	QList<Widget*> _widgets;
+};
+
+}
+
+Q_DECLARE_INTERFACE(Doodle::IApplication, "Doodle.IApplication/1.0");
+
+#endif /* IAPPLICATION_H_ */

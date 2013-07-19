@@ -1,0 +1,112 @@
+/* (C) 2009 by Andrea Franceschini <andrea.franceschini@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef WIDGET_H_
+#define WIDGET_H_
+
+#include <cmath>
+
+#include <QObject>
+#include <QList>
+#include <QPointF>
+#include <QMatrix>
+#include <QPolygonF>
+class QPainter;
+
+#include "IApplication.h"
+
+namespace Doodle {
+
+class Widget : public QObject {
+	Q_OBJECT
+
+public:
+	Widget(Widget*);
+	virtual ~Widget();
+
+	unsigned long id() const { return _id; }
+	virtual const QString name() const = 0;
+	enum RenderFlags { NoFlag = 0x0, RenderChildren = 0x1, AllFlags = 0xff };
+	RenderFlags renderFlags() const { return _flags; }
+	void setRenderFlags(RenderFlags flags) { _flags = flags; }
+	virtual const QPointF position() const { return _position; }
+	virtual void setPosition(QPointF);
+	virtual float angle() const { return _angle; }
+	virtual void setAngle(float);
+	virtual float size() const { return _size; }
+	virtual void setSize(float size) { _size = size; }
+	virtual float scale() const { return _scale; }
+	virtual void setScale(float);
+	virtual const QPolygonF& shape() const { return _shape; }
+	virtual void setShape(QPolygonF shape) { _shape = shape; }
+	virtual bool pinchable() const { return _pinchable; }
+	virtual void setPinchable(bool pinchable = true) { _pinchable = pinchable; }
+
+	virtual bool visible() const { return _visible; }
+	virtual void setVisible(bool visible = true) { _visible = visible; }
+
+	virtual void render(QPainter*) = 0;
+	virtual void renderChildren(QPainter*);
+
+	virtual bool contains(const QPointF&) const;
+
+	Widget* parent() { return _parent; }
+	void setParent(Widget* parent) { _parent = parent; }
+	bool isTopLevel() { return _parent == 0; }
+	void addChild(Widget*);
+	void removeChild(Widget*);
+	const QList<Widget*>& children() const { return _children; }
+
+	void transform(QPointF, float, float);
+
+	IApplication* application() { return _application; }
+	void setApplication(IApplication* application) { _application = application; }
+	const QList<long>& objects() { return _objects; }
+	void setObjects(QList<long> objects) { _objects = objects; }
+	void appendObject(long object) { _objects.append(object); }
+
+signals:
+	void tapped(int);
+
+public slots:
+	virtual void tap(int);
+
+protected:
+	unsigned long _id;
+	RenderFlags _flags;
+	QPointF _position;
+	double _angle;
+	double _size;
+	double _scale;
+
+	QPolygonF _shape;
+
+	bool _visible;
+	bool _pinchable;
+
+	Widget* _parent;
+	QList<Widget*> _children;
+
+	IApplication* _application;
+	QList<long> _objects;
+
+private:
+	static unsigned long s_id;
+};
+
+}
+
+#endif /* WIDGET_H_ */

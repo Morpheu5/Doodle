@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/20/trunk/DoodleSDK/widgets
+END
+LabelWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/33/trunk/DoodleSDK/widgets/LabelWidget.h
+END
+CheckButtonWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/37/trunk/DoodleSDK/widgets/CheckButtonWidget.cpp
+END
+PushButtonWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/37/trunk/DoodleSDK/widgets/PushButtonWidget.cpp
+END
+CheckButtonWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/33/trunk/DoodleSDK/widgets/CheckButtonWidget.h
+END
+PushButtonWidget.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/36/trunk/DoodleSDK/widgets/PushButtonWidget.h
+END
+LabelWidget.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/33/trunk/DoodleSDK/widgets/LabelWidget.cpp
+END

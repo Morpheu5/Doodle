@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doodle>
+	<section id="system">
+		<param name="applicationspath">/home/morpheu5/src/reactable/DoodleApps</param>
+		<param name="gesturerecognizerspath">/home/morpheu5/src/reactable/DoodleGRs</param>
+		<param name="resourcespath">/home/morpheu5/src/reactable/DoodleRC</param>
+	</section>
+	<section id="graphics">
+		<param name="fps">45</param>
+		<param name="colorCycle">30.0</param>
+		<param name="xRotation">210.0</param> <!-- 210.0 -->
+		<param name="zRotation">5.0</param>
+		<param name="xPosition">0.027</param>
+		<param name="yPosition">-0.053</param> <!-- -0.065 -->
+		<param name="zPosition">-0.1</param> <!-- -0.1 -->
+		<param name="xScale">0.85</param>
+		<param name="yScale">1.0</param>
+	</section>
+	<section id="audio">
+		<param name="mute">true</param>
+	</section>
+	<section id="trace">
+		<param name="timegap">500</param>
+		<param name="spacegap">0.025</param>
+	</section>
+	<section id="group">
+		<param name="spacegap">0.15</param>
+		<param name="multistroke">true</param>
+	</section>
+	<section id="objects">
+		<object name="Tonalizer" symbol="53"/>
+		<object name="Sequencer" symbol="26"/>
+		<object name="Metronome" symbol="44"/>
+	</section>
+	<section id="gesturerecognizers">
+		<!-- First, the core GRs -->
+		<gesturerecognizer name="MultiTap">
+			<param name="priority">0</param>
+		</gesturerecognizer>
+		<gesturerecognizer name="Pinch">
+			<param name="priority">1</param>
+		</gesturerecognizer>
+		<gesturerecognizer name="StraightStroke">
+			<param name="priority">2</param>
+		</gesturerecognizer>
+		<gesturerecognizer name="MusicTouch">
+			<param name="priority">3</param>
+		</gesturerecognizer>
+		<!-- Then the optional ones -->
+		<gesturerecognizer name="Glyph">
+			<param name="priority">10</param>
+			<param name="engine">Bezier</param>
+			<param name="enginesPath">/home/morpheu5/src/reactable/DoodleGRs</param>
+		</gesturerecognizer>
+	</section>
+	<section id="applications">
+		<application name="Tonalizer">
+			<param name="padNeeded">false</param>
+		</application>
+		<application name="Sequencer"/>
+		<application name="Metronome">
+			<param name="bpm">100.0</param>
+		</application>
+	</section>
+</doodle>

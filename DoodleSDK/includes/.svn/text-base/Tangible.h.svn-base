@@ -1,0 +1,55 @@
+/* (C) 2009 by Andrea Franceschini <andrea.franceschini@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef TANGIBLE_H_
+#define TANGIBLE_H_
+
+#include <qmath.h>
+#include <QPolygonF>
+#include "Target.h"
+
+namespace Doodle {
+class Tangible : public Target {
+public:
+	Tangible();
+	Tangible(long, int, float, float, TUIO::TuioTime, float, float, float, float, float, float, float, int);
+	~Tangible();
+
+	int fiducialID() const { return _fiducialID; }
+	float angle() const { return _angle; }
+	float angleDeg() const { return _angle*180/M_PI; }
+	float rotationSpeed() const { return _rotationSpeed; }
+	float rotationAccel() const { return _rotationAccel; }
+	float size() const { return _size; }
+	bool associated() const { return _associated; }
+	void setAssociated(bool associated) { _associated = associated; }
+
+	void makeShape();
+	const QPolygonF& shape() const { return _shape; }
+
+protected:
+	int _fiducialID;
+	float _angle;
+	float _rotationSpeed;
+	float _rotationAccel;
+	float _size;
+	bool _associated;
+
+	QPolygonF _shape;
+};
+}
+
+#endif /* TANGIBLE_H_ */

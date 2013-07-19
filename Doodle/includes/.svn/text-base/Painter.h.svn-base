@@ -1,0 +1,89 @@
+/* (C) 2009 by Andrea Franceschini <andrea.franceschini@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef PAINTER_H_
+#define PAINTER_H_
+
+#include <QBrush>
+#include <QPen>
+#include <QHash>
+
+#include <QMutex>
+
+class QPainter;
+class QPaintEvent;
+
+namespace Doodle {
+class Tangible;
+class Trace;
+class Widget;
+
+static QMutex paintMutex;
+
+class Painter {
+public:
+	Painter();
+	~Painter();
+
+	void paint(QPainter*, QPaintEvent*);
+
+	int width() const { return _width; }
+	void setWidth(int width) { _width = width; }
+	int height() const { return _height; }
+	void setHeight(int height) { _height = height; }
+	float scale() const { return _scale; }
+	void setScale(float scale) { _scale = scale; }
+	void setSize(int width, int height) { _width = width; _height = height; _aspectRatio = (float)_height/_width; _scale = (float)_height/800; }
+	float aspectRatio() const { return _aspectRatio; }
+	const QBrush& background() const { return _background; }
+	void setBackground(QBrush background) { _background = background; }
+	void setHueStep(float hueStep) { _hueStep = hueStep; }
+
+	void setTangibles(QHash<long, Tangible*>* tangibles) { _tangibles = tangibles; }
+	void setTraces(QHash<long, Trace*>* traces) { _traces = traces; }
+	void setWidgets(QList<Widget*>* widgets) { _widgets = widgets; }
+	void setTraceSpaceGap(float* traceSpaceGap) { _traceSpaceGap = traceSpaceGap; }
+	void setGroupSpaceGap(float* groupSpaceGap) { _groupSpaceGap = groupSpaceGap; }
+
+	void toggleOnTable() { _onTable = !_onTable; }
+
+private:
+	float _hue;
+	float _hueStep;
+
+	QBrush _background;
+	QPen _pen;
+	QBrush _fingerBrush;
+	QPen _fingerPen;
+
+	int _width;
+	int _height;
+	float _scale;
+	float _aspectRatio; // _height / _width
+
+	QHash<long, Tangible*>* _tangibles;
+	QHash<long, Trace*>* _traces;
+	QList<Widget*>* _widgets;
+	float* _traceSpaceGap;
+	float* _groupSpaceGap;
+
+	bool _onTable;
+};
+}
+
+//static QMutex s_paintMutex;
+
+#endif /* PAINTER_H_ */

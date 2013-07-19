@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/13/trunk/DoodleSDK/includes
+END
+Cursor.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/33/trunk/DoodleSDK/includes/Cursor.h
+END
+IApplication.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/43/trunk/DoodleSDK/includes/IApplication.h
+END
+Stroke.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/33/trunk/DoodleSDK/includes/Stroke.h
+END
+Tangible.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/33/trunk/DoodleSDK/includes/Tangible.h
+END
+OSCHelper.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/43/trunk/DoodleSDK/includes/OSCHelper.h
+END
+Group.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/33/trunk/DoodleSDK/includes/Group.h
+END
+Target.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/33/trunk/DoodleSDK/includes/Target.h
+END
+Settings.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/38/trunk/DoodleSDK/includes/Settings.h
+END
+IGestureRecognizer.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/33/trunk/DoodleSDK/includes/IGestureRecognizer.h
+END
+Widget.h
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/33/trunk/DoodleSDK/includes/Widget.h
+END
+Trace.h
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/33/trunk/DoodleSDK/includes/Trace.h
+END

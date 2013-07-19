@@ -1,0 +1,85 @@
+/* (C) 2009 by Andrea Franceschini <andrea.franceschini@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef VIEWPORT_H_
+#define VIEWPORT_H_
+
+#include <QGLWidget>
+
+class QResizeEvent;
+class QKeyEvent;
+class QPaintEvent;
+class QGLFramebufferObject;
+
+namespace Doodle {
+class Painter;
+
+class Viewport : public QGLWidget {
+	Q_OBJECT
+
+public:
+	Viewport(Painter*);
+	~Viewport();
+
+	QSize minimumSizeHint() const;
+	QSize sizeHint() const;
+
+	double xRotation() const { return _xRotation; }
+	void setXRotation(double xRotation) { _xRotation = xRotation; }
+	double xPosition() const { return _xPosition; }
+	void setXPosition(double xPosition) { _xPosition = xPosition; }
+	double yPosition() const { return _yPosition; }
+	void setYPosition(double yPosition) { _yPosition = yPosition; }
+	double zPosition() const { return _zPosition; }
+	void setZPosition(double zPosition) { _zPosition = zPosition; }
+
+public slots:
+	void animate();
+
+protected:
+	void keyPressEvent(QKeyEvent*);
+	void keyReleaseEvent(QKeyEvent*);
+	void paintEvent(QPaintEvent*);
+
+	void initializeGL();
+	void initCommon();
+	void initPbuffer();
+
+	void resizeGL(int, int);
+
+private:
+	bool _fullscreen;
+	bool _calibration;
+
+	bool _hasShift;
+	double _xScale;
+	double _yScale;
+	double _xRotation;
+	double _xPosition;
+	double _yPosition;
+	double _zPosition;
+
+	Painter* _painter;
+
+	GLuint _object;
+	QGLFramebufferObject* _fbo;
+
+	void saveGLState();
+	void restoreGLState();
+};
+}
+
+#endif /* VIEWPORT_H_ */

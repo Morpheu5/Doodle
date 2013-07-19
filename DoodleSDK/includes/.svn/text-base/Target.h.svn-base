@@ -1,0 +1,59 @@
+/* (C) 2009 by Andrea Franceschini <andrea.franceschini@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef TARGET_H_
+#define TARGET_H_
+
+#include <QObject>
+#include <QPointF>
+#include <TUIO/TuioTime.h>
+
+namespace Doodle {
+class Target {
+public:
+	Target();
+	Target(long, float, float, TUIO::TuioTime, float, float, float, float, int);
+	~Target();
+
+	float squareDistance(const Target&);
+
+	long sessionID() const { return _sessionID; }
+	float x() const { return _position.x(); }
+	float y() const { return _position.y(); }
+	const QPointF& position() const { return _position; }
+	TUIO::TuioTime currentTime() const { return _currentTime; }
+	float xSpeed() const { return _xSpeed; }
+	float ySpeed() const { return _ySpeed; }
+	float motionSpeed() const { return _motionSpeed; }
+	float motionAccel() const { return _motionAccel; }
+
+	enum State { INVALID = -1, ADDED, ACCELERATING, DECELERATING, STOPPED, REMOVED };
+	int state() const { return _state; }
+	void setState(State state) { _state = state; }
+
+protected:
+	long _sessionID;
+	QPointF _position;
+	TUIO::TuioTime _currentTime;
+	float _xSpeed;
+	float _ySpeed;
+	float _motionSpeed;
+	float _motionAccel;
+	int _state;
+};
+}
+
+#endif /* TARGET_H_ */

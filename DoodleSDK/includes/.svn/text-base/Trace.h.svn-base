@@ -1,0 +1,63 @@
+/* (C) 2009 by Andrea Franceschini <andrea.franceschini@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef TRACE_H_
+#define TRACE_H_
+
+#include <QList>
+#include "Stroke.h"
+
+namespace Doodle {
+
+class Tangible;
+class Widget;
+
+class Trace {
+public:
+	Trace();
+	~Trace();
+
+	const QList<Stroke>& strokes() const;
+	long id() const;
+	long prevId() const;
+	long groupId() const { return _groupId; }
+	void setGroupId(long groupId) { _groupId = groupId; }
+	const Cursor& firstPoint() const;
+	const Cursor& lastPoint() const;
+	void append(Cursor);
+	void addTangible(Tangible*);
+	const QList<Tangible*>& tangibles() const { return _tangibles; }
+	Widget* widget() { return _widget; }
+	void setWidget(Widget* widget) { _widget = widget; }
+
+	enum State { ADDED, UPDATED, REMOVED, RESUMED, DEAD };
+	enum State state() const { return _state; }
+	void setState(State state) { _state = state; }
+
+	bool isOnWidget() const { return _widget != NULL; }
+
+private:
+	long _groupId;
+
+	QList<Stroke> _strokes;
+	QList<Tangible*> _tangibles;
+	Widget* _widget;
+
+	State _state;
+};
+}
+
+#endif /* TRACE_H_ */

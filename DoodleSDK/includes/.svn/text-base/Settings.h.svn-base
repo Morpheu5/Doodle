@@ -1,0 +1,56 @@
+/* (C) 2009 by Andrea Franceschini <andrea.franceschini@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef SETTINGS_H_
+#define SETTINGS_H_
+
+#include <QObject>
+#include <QString>
+#include <QStringList>
+#include <QHash>
+
+namespace Doodle {
+
+class Settings : public QObject {
+public:
+	Settings(QObject*);
+	virtual ~Settings();
+
+	static Settings* instance() {
+		if(!s_instance) {
+			s_instance = new Settings(0);
+		}
+		return s_instance;
+	}
+
+	void loadConfig(QString);
+
+	QString get(QString, QString);
+
+protected:
+	QHash<QString, QString> _system;
+	QHash<QString, QString> _graphics;
+	QHash<QString, QString> _audio;
+
+private:
+	QString retrieveConfigParam(QString, QString, QString) const;
+
+	static Settings* s_instance;
+};
+
+}
+
+#endif /* SETTINGS_H_ */

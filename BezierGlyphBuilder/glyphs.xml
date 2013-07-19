@@ -1,0 +1,273 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyphs>
+ <glyph id="C" variant="0" >
+  <points>
+   <point x="0.5" y="-0.5" />
+   <point x="-0.5" y="0.0" />
+   <point x="0.5" y="0.5" />
+  </points>
+ </glyph>
+ <glyph id="C" variant="1" >
+  <points>
+   <point x="0.48" y="-0.51" />
+   <point x="-0.5" y="-0.66" />
+   <point x="-0.515" y="0.775" />
+   <point x="0.5" y="0.5" />
+  </points>
+ </glyph>
+ <glyph id="D" variant="0" >
+  <points>
+   <point x="0.36" y="-0.54" />
+   <point x="0.39" y="0.31" />
+   <point x="0.38" y="0.36" />
+   <point x="0.33" y="0.37" />
+   <point x="0.22" y="0.37" />
+   <point x="0.06" y="-0.16" />
+   <point x="-0.45" y="-0.07" />
+   <point x="-0.66" y="0.43" />
+   <point x="-0.18" y="0.53" />
+   <point x="0.37" y="0.44" />
+  </points>
+ </glyph>
+ <glyph id="E" variant="0" >
+  <points>
+   <point x="0.48" y="-0.605" />
+   <point x="0.25" y="-0.78" />
+   <point x="-0.855" y="-0.725" />
+   <point x="-0.62" y="0.855" />
+   <point x="0.88" y="-0.47" />
+   <point x="0.89" y="0.23" />
+   <point x="-0.68" y="-0.885" />
+   <point x="-0.805" y="0.7" />
+   <point x="0.277" y="0.72" />
+   <point x="0.485" y="0.525" />
+  </points>
+ </glyph>
+ <glyph id="F" variant="0" >
+  <points>
+   <point x="0.17" y="-0.49" />
+   <point x="-0.37" y="-0.49" />
+   <point x="-0.31" y="-0.46" />
+   <point x="-0.31" y="-0.41" />
+   <point x="-0.31" y="0.48" />
+  </points>
+ </glyph>
+ <glyph id="F" variant="1" >
+  <points>
+   <point x="-0.22" y="-0.03" />
+   <point x="0.8100000000000001" y="-0.24" />
+   <point x="0.25" y="-0.95" />
+   <point x="-0.32" y="-0.705" />
+   <point x="0.3" y="0.9399999999999999" />
+   <point x="-0.33" y="0.95" />
+   <point x="-0.84" y="0.19" />
+   <point x="0.29" y="-0.05" />
+  </points>
+ </glyph>
+ <glyph id="G" variant="0" >
+  <points>
+   <point x="0.265" y="-0.54" />
+   <point x="-0.125" y="-0.695" />
+   <point x="-0.42" y="-0.5600000000000001" />
+   <point x="-0.8" y="-0.21" />
+   <point x="-0.893" y="0.623" />
+   <point x="-0.805" y="0.975" />
+   <point x="0.65" y="0.78" />
+   <point x="0.49" y="0.64" />
+   <point x="0.61" y="0.36" />
+   <point x="0.27" y="0.1" />
+   <point x="0.12" y="0.035" />
+   <point x="-0.078" y="0.183" />
+   <point x="-0.595" y="0.23" />
+   <point x="0.27" y="0.19" />
+   <point x="0.515" y="0.195" />
+  </points>
+ </glyph>
+ <glyph id="A" variant="0" >
+  <points>
+   <point x="-0.44" y="0.52" />
+   <point x="-0.395" y="0.11" />
+   <point x="0.135" y="-0.78" />
+   <point x="-0.015" y="-0.975" />
+   <point x="-0.168" y="-0.802" />
+   <point x="0.37" y="0.1" />
+   <point x="0.42" y="0.52" />
+  </points>
+ </glyph>
+ <glyph id="A" variant="1" >
+  <points>
+   <point x="-0.44" y="0.52" />
+   <point x="-0.245" y="-0.5649999999999999" />
+   <point x="-0.08699999999999999" y="-0.763" />
+   <point x="0.08500000000000001" y="-0.96" />
+   <point x="0.283" y="-0.542" />
+   <point x="0.385" y="0.125" />
+   <point x="0.33" y="0.53" />
+   <point x="0.82" y="0.96" />
+   <point x="0.21" y="0.74" />
+   <point x="0.58" y="0.22" />
+   <point x="0.445" y="-0" />
+   <point x="0.39" y="0.07000000000000001" />
+   <point x="-0.415" y="0.07000000000000001" />
+  </points>
+ </glyph>
+ <glyph id="B" variant="0" >
+  <points>
+   <point x="-0.44" y="0.83" />
+   <point x="-0.455" y="-0.5600000000000001" />
+   <point x="-0.465" y="-0.695" />
+   <point x="-0.665" y="-0.76" />
+   <point x="-0.465" y="-0.755" />
+   <point x="0.573" y="-0.552" />
+   <point x="0.97" y="-0.36" />
+   <point x="0.6850000000000001" y="0.13" />
+   <point x="-0.26" y="-0.115" />
+   <point x="0.37" y="0.09" />
+   <point x="-0.85" y="0.46" />
+   <point x="-0.86" y="-0.15" />
+   <point x="0.5649999999999999" y="-0.145" />
+   <point x="0.82" y="-0.135" />
+   <point x="0.87" y="0.84" />
+   <point x="-0.205" y="0.825" />
+  </points>
+ </glyph>
+ <glyph id="1" variant="0" >
+  <points>
+   <point x="-0.41" y="-0.015" />
+   <point x="0.013" y="-0.01" />
+   <point x="0" y="-0.852" />
+   <point x="-0.015" y="-0.862" />
+   <point x="-0.05" y="0.555" />
+  </points>
+ </glyph>
+ <glyph id="3" variant="0" >
+  <points>
+   <point x="-0.905" y="-0.765" />
+   <point x="0.9429999999999999" y="-0.8149999999999999" />
+   <point x="0.54" y="-0.834" />
+   <point x="-0.189" y="-0.739" />
+   <point x="-0.802" y="0.17" />
+   <point x="-0.917" y="-0.36" />
+   <point x="-0.636" y="-0.584" />
+   <point x="0.217" y="-0.5" />
+   <point x="0.667" y="-0.52" />
+   <point x="0.855" y="0.382" />
+   <point x="0.8" y="0.928" />
+   <point x="-0.915" y="0.435" />
+  </points>
+ </glyph>
+ <glyph id="4" variant="0" >
+  <points>
+   <point x="0.115" y="-0.79" />
+   <point x="-0.825" y="0.67" />
+   <point x="-0.63" y="0.325" />
+   <point x="-0.762" y="0.083" />
+   <point x="0.005" y="0.365" />
+   <point x="0.875" y="0.34" />
+   <point x="0.46" y="-0.165" />
+   <point x="0.405" y="0.525" />
+   <point x="0.45" y="0.84" />
+  </points>
+ </glyph>
+ <glyph id="7" variant="0" >
+  <points>
+   <point x="-0.515" y="-0.755" />
+   <point x="0.903" y="-0.805" />
+   <point x="0.62" y="-0.777" />
+   <point x="-0.055" y="-0.417" />
+   <point x="-0.05" y="0.555" />
+  </points>
+ </glyph>
+ <glyph id="9" variant="0" >
+  <points>
+   <point x="0.615" y="-0.165" />
+   <point x="0.068" y="0.242" />
+   <point x="-0.852" y="-0.218" />
+   <point x="-0.8070000000000001" y="-0.883" />
+   <point x="-0.007" y="-0.995" />
+   <point x="0.923" y="-1.008" />
+   <point x="0.858" y="-0.55" />
+   <point x="0.738" y="0.222" />
+   <point x="0.598" y="0.8120000000000001" />
+   <point x="-0.04" y="0.925" />
+  </points>
+ </glyph>
+ <glyph id="#" variant="0" >
+  <points>
+   <point x="-0.485" y="0.285" />
+   <point x="-0.021" y="-0.885" />
+   <point x="0.034" y="-0.835" />
+   <point x="0.078" y="0.72" />
+   <point x="0.13" y="0.825" />
+   <point x="0.595" y="-0.235" />
+  </points>
+ </glyph>
+ <glyph id="m" variant="0" >
+  <points>
+   <point x="-0.975" y="0.605" />
+   <point x="-0.545" y="-0.75" />
+   <point x="-0.83" y="-0.5" />
+   <point x="0.8" y="1" />
+   <point x="-0.85" y="0.5" />
+   <point x="-0.85" y="1" />
+   <point x="0.2" y="-1" />
+   <point x="-0" y="-0.5" />
+   <point x="-0.2" y="-1" />
+   <point x="0.85" y="1" />
+   <point x="0.85" y="0.5" />
+   <point x="-0.8" y="1" />
+   <point x="0.83" y="-0.5" />
+   <point x="0.55" y="-0.82" />
+   <point x="0.99" y="0.585" />
+  </points>
+ </glyph>
+ <glyph id="maj" variant="0" >
+  <points>
+   <point x="-0.95" y="0.7" />
+   <point x="-0.667" y="0.7" />
+   <point x="-0.487" y="-0.54" />
+   <point x="0.1" y="-0.73" />
+   <point x="-0.97" y="-0.95" />
+   <point x="0.625" y="0.95" />
+   <point x="-0.45" y="0.9399999999999999" />
+   <point x="-0.24" y="0.965" />
+   <point x="-0.355" y="0.955" />
+   <point x="-0.625" y="0.95" />
+   <point x="0.97" y="-0.95" />
+   <point x="-0.1" y="-0.73" />
+   <point x="0.667" y="-0.55" />
+   <point x="0.262" y="0.67" />
+   <point x="0.475" y="0.745" />
+  </points>
+ </glyph>
+ <glyph id="add" variant="0" >
+  <points>
+   <point x="0.075" y="-0.67" />
+   <point x="0.078" y="0.715" />
+   <point x="0.083" y="0.805" />
+   <point x="0.07" y="0.88" />
+   <point x="0.002" y="0.595" />
+   <point x="0.229" y="0.055" />
+   <point x="-0.021" y="0.055" />
+   <point x="-0.103" y="0.06" />
+   <point x="-0.341" y="0.038" />
+   <point x="-0.916" y="0.006" />
+   <point x="-0.821" y="0.056" />
+   <point x="-0.575" y="-0.007" />
+   <point x="0.785" y="0" />
+  </points>
+ </glyph>
+ <glyph id="add" variant="1" >
+  <points>
+   <point x="0.225" y="-0.68" />
+   <point x="0.238" y="0.665" />
+   <point x="0.002" y="0.783" />
+   <point x="-0.233" y="0.85" />
+   <point x="-0.161" y="0.089" />
+   <point x="-0.643" y="0.192" />
+   <point x="-0.761" y="-0.301" />
+   <point x="-0.6" y="-0.139" />
+   <point x="0.833" y="-0.115" />
+  </points>
+ </glyph>
+</glyphs>

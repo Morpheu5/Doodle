@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<glyph name="A">
+		<polygon>
+			<vertex x="0.002085" y="0.500000" />
+			<vertex x="0.001253" y="0.261520" />
+			<vertex x="0.269014" y="0.310347" />
+		</polygon>
+		<polygon>
+			<vertex x="0.001253" y="0.261520" />
+			<vertex x="0.160225" y="0.113724" />
+			<vertex x="0.269014" y="0.310347" />
+		</polygon>
+		<polygon>
+			<vertex x="0.160225" y="0.113724" />
+			<vertex x="0.454706" y="0.035118" />
+			<vertex x="0.269014" y="0.310347" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.269014" y="0.310347" />
+			<vertex x="-0.454706" y="0.035118" />
+			<vertex x="-0.157366" y="0.106281" />
+		</polygon>
+		<polygon>
+			<vertex x="0.160225" y="0.113724" />
+			<vertex x="0.217496" y="-0.037820" />
+			<vertex x="0.454706" y="0.035118" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.454706" y="0.035118" />
+			<vertex x="-0.214638" y="-0.045263" />
+			<vertex x="-0.157366" y="0.106281" />
+		</polygon>
+		<polygon>
+			<vertex x="0.454706" y="0.035118" />
+			<vertex x="0.217496" y="-0.037820" />
+			<vertex x="0.479991" y="-0.252036" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.479991" y="-0.252036" />
+			<vertex x="-0.214638" y="-0.045263" />
+			<vertex x="-0.454706" y="0.035118" />
+		</polygon>
+		<polygon>
+			<vertex x="0.217496" y="-0.037820" />
+			<vertex x="0.275105" y="-0.271726" />
+			<vertex x="0.479991" y="-0.252036" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.479991" y="-0.252036" />
+			<vertex x="-0.275105" y="-0.271726" />
+			<vertex x="-0.214638" y="-0.045263" />
+		</polygon>
+		<polygon>
+			<vertex x="0.275105" y="-0.271726" />
+			<vertex x="0.500000" y="-0.495197" />
+			<vertex x="0.479991" y="-0.252036" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.479991" y="-0.252036" />
+			<vertex x="-0.500000" y="-0.495197" />
+			<vertex x="-0.275105" y="-0.271726" />
+		</polygon>
+		<polygon>
+			<vertex x="0.275105" y="-0.271726" />
+			<vertex x="0.283680" y="-0.500000" />
+			<vertex x="0.500000" y="-0.495197" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.500000" y="-0.495197" />
+			<vertex x="-0.283680" y="-0.500000" />
+			<vertex x="-0.275105" y="-0.271726" />
+		</polygon>
+		<polygon>
+			<vertex x="0.002085" y="0.500000" />
+			<vertex x="-0.269014" y="0.310347" />
+			<vertex x="-0.157366" y="0.106281" />
+		</polygon>
+		<polygon>
+			<vertex x="0.002085" y="0.500000" />
+			<vertex x="-0.157366" y="0.106281" />
+			<vertex x="0.001253" y="0.261520" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.214638" y="-0.045263" />
+			<vertex x="-0.275105" y="-0.271726" />
+			<vertex x="-0.002715" y="-0.022550" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.275105" y="-0.271726" />
+			<vertex x="0.004617" y="-0.202634" />
+			<vertex x="-0.002715" y="-0.022550" />
+		</polygon>
+		<polygon>
+			<vertex x="0.217496" y="-0.037820" />
+			<vertex x="-0.002715" y="-0.022550" />
+			<vertex x="0.004617" y="-0.202634" />
+		</polygon>
+		<polygon>
+			<vertex x="0.217496" y="-0.037820" />
+			<vertex x="0.004617" y="-0.202634" />
+			<vertex x="0.275105" y="-0.271726" />
+		</polygon>
+	</glyph>
+	<glyph name="B">
+		<polygon>
+			<vertex x="-0.250030" y="-0.387757" />
+			<vertex x="-0.462866" y="-0.494133" />
+			<vertex x="-0.500000" y="-0.069330" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.250030" y="-0.387757" />
+			<vertex x="-0.500000" y="-0.069330" />
+			<vertex x="-0.264524" y="-0.071427" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.500000" y="-0.069330" />
+			<vertex x="-0.499987" y="0.064351" />
+			<vertex x="-0.264524" y="-0.071427" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.264524" y="-0.071427" />
+			<vertex x="-0.499987" y="0.064351" />
+			<vertex x="-0.275600" y="0.089751" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.275600" y="0.089751" />
+			<vertex x="-0.499987" y="0.064351" />
+			<vertex x="-0.499987" y="0.500000" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.275600" y="0.089751" />
+			<vertex x="-0.499987" y="0.500000" />
+			<vertex x="-0.286664" y="0.344765" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.499987" y="0.500000" />
+			<vertex x="0.226555" y="0.450268" />
+			<vertex x="-0.286664" y="0.344765" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.286664" y="0.344765" />
+			<vertex x="0.226555" y="0.450268" />
+			<vertex x="0.037794" y="0.325430" />
+		</polygon>
+		<polygon>
+			<vertex x="0.037794" y="0.325430" />
+			<vertex x="0.226555" y="0.450268" />
+			<vertex x="0.344856" y="0.178414" />
+		</polygon>
+		<polygon>
+			<vertex x="0.037794" y="0.325430" />
+			<vertex x="0.344856" y="0.178414" />
+			<vertex x="0.067001" y="0.193513" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.264524" y="-0.071427" />
+			<vertex x="-0.020823" y="0.109949" />
+			<vertex x="-0.009846" y="-0.056789" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.264524" y="-0.071427" />
+			<vertex x="-0.275600" y="0.089751" />
+			<vertex x="-0.020823" y="0.109949" />
+		</polygon>
+		<polygon>
+			<vertex x="0.185603" y="0.041497" />
+			<vertex x="-0.009846" y="-0.056789" />
+			<vertex x="-0.020823" y="0.109949" />
+		</polygon>
+		<polygon>
+			<vertex x="0.185603" y="0.041497" />
+			<vertex x="-0.020823" y="0.109949" />
+			<vertex x="0.167251" y="0.088698" />
+		</polygon>
+		<polygon>
+			<vertex x="0.344856" y="0.178414" />
+			<vertex x="-0.020823" y="0.109949" />
+			<vertex x="0.067001" y="0.193513" />
+		</polygon>
+		<polygon>
+			<vertex x="0.344856" y="0.178414" />
+			<vertex x="0.167251" y="0.088698" />
+			<vertex x="-0.020823" y="0.109949" />
+		</polygon>
+		<polygon>
+			<vertex x="0.185603" y="0.041497" />
+			<vertex x="0.258502" y="-0.153100" />
+			<vertex x="-0.009846" y="-0.056789" />
+		</polygon>
+		<polygon>
+			<vertex x="0.185603" y="0.041497" />
+			<vertex x="0.500000" y="-0.070005" />
+			<vertex x="0.258502" y="-0.153100" />
+		</polygon>
+		<polygon>
+			<vertex x="0.500000" y="-0.070005" />
+			<vertex x="0.208928" y="-0.357625" />
+			<vertex x="0.258502" y="-0.153100" />
+		</polygon>
+		<polygon>
+			<vertex x="0.500000" y="-0.070005" />
+			<vertex x="0.419456" y="-0.500000" />
+			<vertex x="0.208928" y="-0.357625" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.462866" y="-0.494133" />
+			<vertex x="0.208928" y="-0.357625" />
+			<vertex x="0.419456" y="-0.500000" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.250030" y="-0.387757" />
+			<vertex x="0.208928" y="-0.357625" />
+			<vertex x="-0.462866" y="-0.494133" />
+		</polygon>
+	</glyph>
+	<glyph name="C">
+		<polygon>
+			<vertex x="-0.172726" y="0.445617" />
+			<vertex x="-0.394925" y="0.266150" />
+			<vertex x="-0.110412" y="0.282288" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.110412" y="0.282288" />
+			<vertex x="-0.394925" y="0.266150" />
+			<vertex x="-0.230960" y="0.173847" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.230960" y="0.173847" />
+			<vertex x="-0.394925" y="0.266150" />
+			<vertex x="-0.500000" y="0.058523" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.230960" y="0.173847" />
+			<vertex x="-0.500000" y="0.058523" />
+			<vertex x="-0.306607" y="0.043736" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.500000" y="0.058523" />
+			<vertex x="-0.440005" y="-0.278675" />
+			<vertex x="-0.306607" y="0.043736" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.306607" y="0.043736" />
+			<vertex x="-0.440005" y="-0.278675" />
+			<vertex x="-0.270010" y="-0.175503" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.270010" y="-0.175503" />
+			<vertex x="-0.440005" y="-0.278675" />
+			<vertex x="-0.114938" y="-0.494494" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.270010" y="-0.175503" />
+			<vertex x="-0.114938" y="-0.494494" />
+			<vertex x="-0.015522" y="-0.325106" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.114938" y="-0.494494" />
+			<vertex x="0.232578" y="-0.500000" />
+			<vertex x="-0.015522" y="-0.325106" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.015522" y="-0.325106" />
+			<vertex x="0.232578" y="-0.500000" />
+			<vertex x="0.176011" y="-0.327905" />
+		</polygon>
+		<polygon>
+			<vertex x="0.176011" y="-0.327905" />
+			<vertex x="0.232578" y="-0.500000" />
+			<vertex x="0.500000" y="-0.433985" />
+		</polygon>
+		<polygon>
+			<vertex x="0.176011" y="-0.327905" />
+			<vertex x="0.500000" y="-0.433985" />
+			<vertex x="0.432059" y="-0.269344" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.172726" y="0.445617" />
+			<vertex x="-0.110412" y="0.282288" />
+			<vertex x="0.124819" y="0.327565" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.172726" y="0.445617" />
+			<vertex x="0.124819" y="0.327565" />
+			<vertex x="0.127976" y="0.500000" />
+		</polygon>
+		<polygon>
+			<vertex x="0.124819" y="0.327565" />
+			<vertex x="0.414885" y="0.263308" />
+			<vertex x="0.127976" y="0.500000" />
+		</polygon>
+		<polygon>
+			<vertex x="0.127976" y="0.500000" />
+			<vertex x="0.414885" y="0.263308" />
+			<vertex x="0.479783" y="0.425841" />
+		</polygon>
+	</glyph>
+	<glyph name="D">
+		<polygon>
+			<vertex x="-0.250031" y="-0.344359" />
+			<vertex x="-0.462050" y="-0.500000" />
+			<vertex x="-0.500000" y="-0.072690" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.250031" y="-0.344359" />
+			<vertex x="-0.500000" y="-0.072690" />
+			<vertex x="-0.259352" y="-0.074799" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.500000" y="-0.072690" />
+			<vertex x="-0.499986" y="0.061781" />
+			<vertex x="-0.259352" y="-0.074799" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.259352" y="-0.074799" />
+			<vertex x="-0.499986" y="0.061781" />
+			<vertex x="-0.270672" y="0.087330" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.270672" y="0.087330" />
+			<vertex x="-0.499986" y="0.061781" />
+			<vertex x="-0.499986" y="0.500000" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.270672" y="0.087330" />
+			<vertex x="-0.499986" y="0.500000" />
+			<vertex x="-0.281978" y="0.343849" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.499986" y="0.500000" />
+			<vertex x="0.000931" y="0.466187" />
+			<vertex x="-0.281978" y="0.343849" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.281978" y="0.343849" />
+			<vertex x="0.000931" y="0.466187" />
+			<vertex x="-0.027262" y="0.237933" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.027262" y="0.237933" />
+			<vertex x="0.000931" y="0.466187" />
+			<vertex x="0.423805" y="0.100858" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.027262" y="0.237933" />
+			<vertex x="0.423805" y="0.100858" />
+			<vertex x="0.233186" y="0.056600" />
+		</polygon>
+		<polygon>
+			<vertex x="0.500000" y="-0.208473" />
+			<vertex x="0.169593" y="-0.324857" />
+			<vertex x="0.275160" y="-0.156954" />
+		</polygon>
+		<polygon>
+			<vertex x="0.500000" y="-0.208473" />
+			<vertex x="0.351801" y="-0.484285" />
+			<vertex x="0.169593" y="-0.324857" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.462050" y="-0.500000" />
+			<vertex x="0.169593" y="-0.324857" />
+			<vertex x="0.351801" y="-0.484285" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.250031" y="-0.344359" />
+			<vertex x="0.169593" y="-0.324857" />
+			<vertex x="-0.462050" y="-0.500000" />
+		</polygon>
+		<polygon>
+			<vertex x="0.423805" y="0.100858" />
+			<vertex x="0.275160" y="-0.156954" />
+			<vertex x="0.233186" y="0.056600" />
+		</polygon>
+		<polygon>
+			<vertex x="0.423805" y="0.100858" />
+			<vertex x="0.500000" y="-0.208473" />
+			<vertex x="0.275160" y="-0.156954" />
+		</polygon>
+	</glyph>
+	<glyph name="E">
+		<polygon>
+			<vertex x="-0.493990" y="-0.489906" />
+			<vertex x="-0.251412" y="-0.327869" />
+			<vertex x="0.500000" y="-0.500000" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.251412" y="-0.327869" />
+			<vertex x="0.477401" y="-0.286885" />
+			<vertex x="0.500000" y="-0.500000" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.493990" y="-0.489906" />
+			<vertex x="-0.500000" y="-0.081967" />
+			<vertex x="-0.251412" y="-0.327869" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.500000" y="-0.081967" />
+			<vertex x="-0.245763" y="-0.065574" />
+			<vertex x="-0.251412" y="-0.327869" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.500000" y="-0.081967" />
+			<vertex x="-0.500000" y="0.098361" />
+			<vertex x="-0.245763" y="-0.065574" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.251412" y="0.098361" />
+			<vertex x="-0.245763" y="-0.065574" />
+			<vertex x="-0.500000" y="0.098361" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.251412" y="0.323770" />
+			<vertex x="-0.251412" y="0.098361" />
+			<vertex x="-0.500000" y="0.098361" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.251412" y="0.323770" />
+			<vertex x="-0.500000" y="0.098361" />
+			<vertex x="-0.483051" y="0.491803" />
+		</polygon>
+		<polygon>
+			<vertex x="0.454802" y="0.500000" />
+			<vertex x="-0.251412" y="0.323770" />
+			<vertex x="-0.483051" y="0.491803" />
+		</polygon>
+		<polygon>
+			<vertex x="0.454802" y="0.500000" />
+			<vertex x="0.460452" y="0.315574" />
+			<vertex x="-0.251412" y="0.323770" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.251412" y="0.098361" />
+			<vertex x="0.437853" y="0.098361" />
+			<vertex x="0.426554" y="-0.069672" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.251412" y="0.098361" />
+			<vertex x="0.426554" y="-0.069672" />
+			<vertex x="-0.245763" y="-0.065574" />
+		</polygon>
+	</glyph>
+	<glyph name="F">
+		<polygon>
+			<vertex x="-0.493743" y="-0.500000" />
+			<vertex x="-0.500000" y="-0.087902" />
+			<vertex x="-0.229989" y="-0.488274" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.500000" y="-0.087902" />
+			<vertex x="-0.235294" y="-0.071341" />
+			<vertex x="-0.229989" y="-0.488274" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.500000" y="-0.087902" />
+			<vertex x="-0.500000" y="0.094265" />
+			<vertex x="-0.235294" y="-0.071341" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.241177" y="0.094265" />
+			<vertex x="-0.235294" y="-0.071341" />
+			<vertex x="-0.500000" y="0.094265" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.241177" y="0.321974" />
+			<vertex x="-0.241177" y="0.094265" />
+			<vertex x="-0.500000" y="0.094265" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.241177" y="0.321974" />
+			<vertex x="-0.500000" y="0.094265" />
+			<vertex x="-0.482353" y="0.491720" />
+		</polygon>
+		<polygon>
+			<vertex x="0.494118" y="0.500000" />
+			<vertex x="-0.241177" y="0.321974" />
+			<vertex x="-0.482353" y="0.491720" />
+		</polygon>
+		<polygon>
+			<vertex x="0.494118" y="0.500000" />
+			<vertex x="0.500000" y="0.313693" />
+			<vertex x="-0.241177" y="0.321974" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.241177" y="0.094265" />
+			<vertex x="0.476471" y="0.094265" />
+			<vertex x="0.464706" y="-0.075481" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.241177" y="0.094265" />
+			<vertex x="0.464706" y="-0.075481" />
+			<vertex x="-0.235294" y="-0.071341" />
+		</polygon>
+	</glyph>
+	<glyph name="G">
+		<polygon>
+			<vertex x="-0.183161" y="0.445617" />
+			<vertex x="-0.398275" y="0.266150" />
+			<vertex x="-0.122834" y="0.282288" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.122834" y="0.282288" />
+			<vertex x="-0.398275" y="0.266150" />
+			<vertex x="-0.239539" y="0.173847" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.239539" y="0.173847" />
+			<vertex x="-0.398275" y="0.266150" />
+			<vertex x="-0.500000" y="0.058523" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.239539" y="0.173847" />
+			<vertex x="-0.500000" y="0.058523" />
+			<vertex x="-0.312773" y="0.043736" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.500000" y="0.058523" />
+			<vertex x="-0.441918" y="-0.278675" />
+			<vertex x="-0.312773" y="0.043736" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.312773" y="0.043736" />
+			<vertex x="-0.441918" y="-0.278675" />
+			<vertex x="-0.277343" y="-0.175503" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.277343" y="-0.175503" />
+			<vertex x="-0.441918" y="-0.278675" />
+			<vertex x="-0.127216" y="-0.494494" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.277343" y="-0.175503" />
+			<vertex x="-0.127216" y="-0.494494" />
+			<vertex x="-0.030969" y="-0.325106" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.127216" y="-0.494494" />
+			<vertex x="0.209219" y="-0.500000" />
+			<vertex x="-0.030969" y="-0.325106" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.030969" y="-0.325106" />
+			<vertex x="0.209219" y="-0.500000" />
+			<vertex x="0.212949" y="-0.349876" />
+		</polygon>
+		<polygon>
+			<vertex x="0.212949" y="-0.349876" />
+			<vertex x="0.209219" y="-0.500000" />
+			<vertex x="0.420257" y="-0.494404" />
+		</polygon>
+		<polygon>
+			<vertex x="0.212949" y="-0.349876" />
+			<vertex x="0.420257" y="-0.494404" />
+			<vertex x="0.423609" y="-0.313285" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.183161" y="0.445617" />
+			<vertex x="-0.122834" y="0.282288" />
+			<vertex x="0.104896" y="0.327565" />
+		</polygon>
+		<polygon>
+			<vertex x="-0.183161" y="0.445617" />
+			<vertex x="0.104896" y="0.327565" />
+			<vertex x="0.107953" y="0.500000" />
+		</polygon>
+		<polygon>
+			<vertex x="0.104896" y="0.327565" />
+			<vertex x="0.359126" y="0.279785" />
+			<vertex x="0.107953" y="0.500000" />
+		</polygon>
+		<polygon>
+			<vertex x="0.107953" y="0.500000" />
+			<vertex x="0.359126" y="0.279785" />
+			<vertex x="0.379415" y="0.469782" />
+		</polygon>
+		<polygon>
+			<vertex x="0.212949" y="-0.349876" />
+			<vertex x="0.423609" y="-0.313285" />
+			<vertex x="0.218267" y="-0.174111" />
+		</polygon>
+		<polygon>
+			<vertex x="0.423609" y="-0.313285" />
+			<vertex x="0.409603" y="-0.172246" />
+			<vertex x="0.218267" y="-0.174111" />
+		</polygon>
+		<polygon>
+			<vertex x="0.386387" y="-0.011191" />
+			<vertex x="0.218267" y="-0.174111" />
+			<vertex x="0.409603" y="-0.172246" />
+		</polygon>
+		<polygon>
+			<vertex x="0.386387" y="-0.011191" />
+			<vertex x="0.409603" y="-0.172246" />
+			<vertex x="0.476878" y="-0.007564" />
+		</polygon>
+		<polygon>
+			<vertex x="0.476878" y="-0.007564" />
+			<vertex x="0.409603" y="-0.172246" />
+			<vertex x="0.500000" y="-0.177738" />
+		</polygon>
+		<polygon>
+			<vertex x="0.218267" y="-0.174111" />
+			<vertex x="0.074600" y="-0.166753" />
+			<vertex x="0.072748" y="0.003421" />
+		</polygon>
+		<polygon>
+			<vertex x="0.386387" y="-0.011191" />
+			<vertex x="0.218267" y="-0.174111" />
+			<vertex x="0.072748" y="0.003421" />
+		</polygon>
+	</glyph>
+</root>

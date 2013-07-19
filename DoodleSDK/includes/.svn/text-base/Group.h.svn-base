@@ -1,0 +1,47 @@
+/* (C) 2009 by Andrea Franceschini <andrea.franceschini@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef GROUP_H_
+#define GROUP_H_
+
+#include <QList>
+#include "Trace.h"
+
+namespace Doodle {
+class Group {
+public:
+	Group();
+
+	void finalizeTrace(Trace*);
+	void appendTrace(Trace*);
+
+	long id() const { return _id; }
+	bool isEmpty() const { return _tempTraces.isEmpty(); }
+	bool isOnWidget() const { return _tempTraces.last()->widget() != NULL; }
+	QList<long> objects() const;
+
+	QList<Trace>& finalizedTraces() { return _traces; }
+	QList<Trace*>& progressiveTraces() { return _tempTraces; }
+
+private:
+	long _id;
+	QList<Trace> _traces;
+	QList<Trace*> _tempTraces;
+	static long s_id;
+};
+}
+
+#endif /* GROUP_H_ */

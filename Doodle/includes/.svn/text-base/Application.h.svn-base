@@ -1,0 +1,181 @@
+/* (C) 2009 by Andrea Franceschini <andrea.franceschini@gmail.com>
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef APPLICATION_H_
+#define APPLICATION_H_
+
+#include <QApplication>
+#include <QString>
+#include <QMap>
+
+#include <DoodleSDK/includes/Tangible.h>
+#include <DoodleSDK/includes/IApplication.h>
+#include <DoodleSDK/includes/IGestureRecognizer.h>
+#include <DoodleSDK/includes/Widget.h>
+
+#include "Grid.h"
+
+class QTimer;
+
+namespace Doodle {
+class TuioProxy;
+class Painter;
+class Viewport;
+class JackDriver;
+
+class Application : public QApplication, public IApplication {
+	Q_OBJECT
+
+	DOODLE_APPLICATION
+
+public:
+	Application(int&, char**);
+	~Application();
+
+	void init(QString, QHash<QString, QString>) { }
+
+	QString retrieveConfigParam(QString, QString, QString) const;
+
+	QString name() const { return QString("Doodle"); }
+	QStringList declareObjects() const { return QStringList(); }
+	QStringList declareGestureRecognizers() const { return QStringList(); }
+	QStringList declareWidgets() const { return QStringList(); }
+
+public slots:
+	void addWidget(Widget* widget) {
+		if(!_widgets.contains(widget)) {
+			_widgets.append(widget);
+		}
+	}
+
+	void removeWidget(Widget* widget) {
+		_widgets.removeAll(widget);
+	}
+
+	void addTangible(long sessionID, int fiducialID, float x, float y, TUIO::TuioTime ttime, float xSpeed, float ySpeed, float motionSpeed, float motionAccel, float angle, float rotationSpeed, float rotationAccel, int state) {
+		_addingTangibles.append(Tangible(sessionID, fiducialID, x, y, ttime, xSpeed, ySpeed, motionSpeed, motionAccel, angle, rotationSpeed, rotationAccel, state));
+	}
+	void updateTangible(long sessionID, int fiducialID, float x, float y, TUIO::TuioTime ttime, float xSpeed, float ySpeed, float motionSpeed, float motionAccel, float angle, float rotationSpeed, float rotationAccel, int state) {
+		_updatingTangibles.append(Tangible(sessionID, fiducialID, x, y, ttime, xSpeed, ySpeed, motionSpeed, motionAccel, angle, rotationSpeed, rotationAccel, state));
+	}
+	void removeTangible(long sessionID, int fiducialID, float x, float y, TUIO::TuioTime ttime, float xSpeed, float ySpeed, float motionSpeed, float motionAccel, float angle, float rotationSpeed, float rotationAccel, int state) {
+		_removingTangibles.append(Tangible(sessionID, fiducialID, x, y, ttime, xSpeed, ySpeed, motionSpeed, motionAccel, angle, rotationSpeed, rotationAccel, state));
+	}
+
+	void addCursor(long sessionID, int fingerID, float x, float y, TUIO::TuioTime ttime, float xSpeed, float ySpeed, float motionSpeed, float motionAccel, int state) {
+		_addingCursors.append(Cursor(sessionID, fingerID, x, y, ttime, xSpeed, ySpeed, motionSpeed, motionAccel, state));
+	}
+	void updateCursor(long sessionID, int fingerID, float x, float y, TUIO::TuioTime ttime, float xSpeed, float ySpeed, float motionSpeed, float motionAccel, int state) {
+		_updatingCursors.append(Cursor(sessionID, fingerID, x, y, ttime, xSpeed, ySpeed, motionSpeed, motionAccel, state));
+	}
+	void removeCursor(long sessionID, int fingerID, float x, float y, TUIO::TuioTime ttime, float xSpeed, float ySpeed, float motionSpeed, float motionAccel, int state) {
+		_removingCursors.append(Cursor(sessionID, fingerID, x, y, ttime, xSpeed, ySpeed, motionSpeed, motionAccel, state));
+	}
+
+	void tuioCycle(TUIO::TuioTime);
+
+	void purgeOldTraces();
+
+	void processResults(QStringList);
+	void processMessages(QStringList);
+	void addTangible(Tangible* t);
+	void updateTangible(Tangible* t);
+	void removeTangible(Tangible* t);
+
+signals:
+	void staticResults(QStringList);
+
+	void deliverMessages(QStringList);
+
+private:
+	void processAddingTangibles();
+	void processUpdatingTangibles();
+	void processRemovingTangibles();
+
+	void processAddingCursors();
+	void processUpdatingCursors();
+	void processRemovingCursors();
+
+	Trace* resumeTrace(Cursor&);
+	Group* findNearbyGroup(Trace*);
+	void associateNearbyTangibles(Trace*);
+
+	QList<Tangible> _addingTangibles;
+	QList<Tangible> _updatingTangibles;
+	QList<Tangible> _removingTangibles;
+
+	QList<Cursor> _addingCursors;
+	QList<Cursor> _updatingCursors;
+	QList<Cursor> _removingCursors;
+
+	// FIXME: There are several hash tables and maps for which the "multi"
+	// variant would be more appropriate and meaningful. Make this correction.
+	QHash<Trace*, QTimer*> _timers;
+
+	QHash<long, Trace*> _traces;
+	QList<Trace*> _removedTraces;
+
+	QHash<long, Tangible*> _tangibles;
+	QHash<long, Cursor*> _cursors;
+	QHash<long, Group*> _groups;
+
+	Grid<Tangible> _grid;
+
+	QHash<long, QString> _objectsTable;
+	QHash<QString, QHash<QString, QString> > _grParams;
+	QHash<QString, QHash<QString, QString> > _appParams;
+
+	QHash<QString, QObject*> _grob;
+	QHash<QString, QObject*> _appob;
+
+	QHash<QString, IGestureRecognizer*> _gestureRecognizers;
+	QHash<QString, IGestureRecognizer*> _staticGRs;
+	QHash<QString, IGestureRecognizer*> _progressiveGRs;
+	QMap<long, IGestureRecognizer*> _grPriorities;
+
+	QHash<QString, IApplication*> _applications;
+	QHash<QString, IApplication*> _objectToApplications;
+	QHash<QString, IApplication*> _gestureRecognizerToApplications;
+
+	// TODO: May be better with application's name?
+	QHash<IApplication*, QStringList> _requestedGRs;
+
+	/* Settings.
+	 * TODO: Provide a better scheme, maybe a separate class. */
+	int _fps;
+	float _traceTimeGap;
+	float _traceSpaceGap;
+	float _groupSpaceGap;
+	bool _multistroke;
+
+	bool _mute;
+
+	/* Service classes. */
+	TuioProxy* _tuioProxy;
+
+	Painter* _painter;
+	Viewport* _viewport;
+
+	QList<Widget*> _widgets;
+
+	QMap<long, QStringList> _sortedResults;
+	QStringList _resultsBuffer;
+
+	JackDriver* _jackDriver;
+};
+}
+
+#endif /* APPLICATION_H_ */
